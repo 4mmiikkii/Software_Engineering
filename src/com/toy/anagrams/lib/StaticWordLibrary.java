@@ -30,7 +30,7 @@
 /* Anagram Game Application */
 
 package com.toy.anagrams.lib;
-
+import java.util.*;
 /**
  * Implementation of the logic for the Anagram Game application.
  */
@@ -78,12 +78,14 @@ final class StaticWordLibrary extends WordLibrary {
         "management",
         "manipulate",
         "mathematics",
-        "hotjava",
+        //"hotjava",
         "vertex",
         "unsigned",
-        "traditional"};
-
-    private static final String[] SCRAMBLED_WORD_LIST = {
+        "traditional",
+        "birthday"};
+    
+    
+    /*private static final String[] SCRAMBLED_WORD_LIST = {
         "batsartcoin",
         "maibuguos",
         "ratimhteci",
@@ -130,8 +132,23 @@ final class StaticWordLibrary extends WordLibrary {
         "nuisngde",
         "rtdatioialn"
     };
-    
+    */
     final static WordLibrary DEFAULT = new StaticWordLibrary();
+    
+   /*public String gocya(int num)  {
+    	String s= WORD_LIST[num];
+    	char []c= s.toCharArray();
+    	Random rand =new Random();
+    	int r1=rand.nextInt(c.length-1);
+    	int r2=rand.nextInt(c.length-1);
+    	char temp;
+    	temp=c[r1];
+    	c[r1]=c[r2];
+    	c[r2]=temp;
+    	String t=String.valueOf(c);
+    	return  t;
+    }
+   */
 
     /**
      * Singleton class.
@@ -153,9 +170,9 @@ final class StaticWordLibrary extends WordLibrary {
      * @param idx index of required word
      * @return word at that index in its scrambled form
      */
-    public String getScrambledWord(int idx) {
+    /*public String getScrambledWord(int idx) {
         return SCRAMBLED_WORD_LIST[idx];
-    }
+    }*/
 
     /**
      * Gets the number of words in the library.
